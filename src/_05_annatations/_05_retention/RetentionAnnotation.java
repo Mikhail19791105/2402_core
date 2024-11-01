@@ -1,11 +1,12 @@
-package _05_annatations._02_marker;
+package _05_annatations._05_retention;
+
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface MyAnnotation {
+@Target(ElementType.TYPE)
+public @interface RetentionAnnotation {
 }
